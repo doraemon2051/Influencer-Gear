@@ -89,6 +89,82 @@
    
     /* Popular Collection */
 
+    .main-container{
+        width: 80%;
+        margin-left: auto;
+        margin-right :auto; 
+        
+    }
+
+    .section-title{
+        text-align: center;
+    }
+
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        margin-top: 30px;
+        column-gap: 20px;
+        row-gap: 20px;
+
+
+    }
+    .collecetion{
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 18px 14px ;
+        
+       
+    }
+    .collecetion img{
+        width: 300px;
+        height: 250px;
+    }
+
+    .collection-title{
+        font-weight: 500;
+        font-size: 28px; 
+        color: #18191F;
+        margin-bottom: 6px;
+
+    }
+    .price{
+        font-weight: 400;
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.87);
+
+    }
+    .collecetion p{
+        font-weight: 700;
+        font-size: 14px;
+        color: #787885;
+
+    }
+    .fa-star{
+       color:  #FB8200;
+    }
+    .see-more{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        justify-content: flex-end;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+        
+
+    }
+    .main-container p span{
+        color: rgba(224, 44, 109, 0.87);
+
+    }
+    .fa-arrow-right{
+        color: rgba(224, 44, 109, 0.87);
+    }
+
+
 
 
 
@@ -186,7 +262,23 @@
         width: 100%;
     }
 
-
+     /********************
+      Popular Collection 
+      *********************/
+      .collections{
+        grid-template-columns: 1fr;
+      }
+      .collecetion img{
+       width: 100%;
+       
+    }
+    .main-container{
+        width: 90%;
+        margin-left: auto;
+        margin-right :auto; 
+        
+    }
+    
 
 }
 
@@ -223,5 +315,18 @@
         padding-left: 60px;
         margin-top: 40px;   
     }
+
+
+    /********************
+      Popular Collection 
+      *********************/
+
+      .collections{
+        grid-template-columns: repeat(2,1fr);
+      }
+      .collecetion img{
+       width: 100%;
+       
+      }
 
 }
